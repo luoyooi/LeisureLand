@@ -1,0 +1,13 @@
+/*解决高度塌陷*/
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body{
+    /*隐藏水平滚动条*/
+    overflow-x: hidden;
+    background-color: #FDFDFD;
+}

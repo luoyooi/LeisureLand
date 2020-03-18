@@ -1,0 +1,54 @@
+.content{
+    width: 100%;
+    margin: 35px auto;
+    z-index: 500;
+}
+
+#content_header{
+    width: 1350px;
+    height: 595px;
+    margin: 10px auto;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px double green;
+    border-radius: 10px;
+}
+
+#content_header_imgs{
+    position: absolute;
+}
+
+#content_header_imgs li{
+    float: left;
+    margin-right: 10px;
+}
+
+#content_header_imgs img{
+    width: 1350px;
+    height: 595px;
+}
+
+#btns{
+    float: right;
+    width: 200px;
+    position: absolute;
+    left: 1130px;
+    top: 377px;
+}
+
+#btns li a{
+    float: right;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: aliceblue;
+    border: black 2px solid;
+    border-radius: 100%;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+
+#btns li a:hover{
+    background-color: #575757;
+}

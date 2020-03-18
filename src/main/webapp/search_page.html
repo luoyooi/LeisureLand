@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>土地搜索</title>
+        <link rel="stylesheet" href="css/remove_default.css" type="text/css"/>
+        <link rel="stylesheet" href="css/global.css" type="text/css"/>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/search_page.css" type="text/css"/>
+        <link rel="stylesheet" href="css/footer.css" type="text/css"/>
+    </head>
+    <body>
+        <!--搜索导航栏-->
+        <div class="search_page_header clearfix">
+            <div class="search_page_searchbox">
+                <a href="index.html"><img src="static/img/seach_page-header/search_logo.gif" alt="logo"/></a>
+                <form action="" method="get">
+                    <input type="search" placeholder=" 上闲心e锄，搜索您喜爱的土地！" autofocus="autofocus"><button><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <ul class="clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#">免费发布</a></li>
+                <li><a href="#">我要找地</a></li>
+                <li><a href="#">土地招商</a></li>
+                <li><a href="#">分站合作</a></li>
+                <li><a href="#">分站店铺</a></li>
+            </ul>
+        </div>
+
+        <!--搜索菜单-->
+        <div class="search_menu">
+            <!--当前位置-->
+            <div class="location">
+                <span>您现在的位置：</span><a href="index.html">首页</a><span> > </span><a href="search_page.html">土地搜索</a>
+            </div>
+            <!--搜索类别-->
+            <div class="selectDiv clearfix">
+                <span class="left">区域</span>
+                <div class="right">
+                    <span><a href="#">全部</a></span>
+                    <ul class="select_area clearfix">
+                        <li><a href="#" title="北京">北京</a></li>
+                        <li><a href="#" title="天津">天津</a></li>
+                        <li><a href="#" title="河北">河北</a></li>
+                        <li><a href="#" title="山西">山西</a></li>
+                        <li><a href="#" title="内蒙古">内蒙古</a></li>
+                        <li><a href="#" title="辽宁">辽宁</a></li>
+                        <li><a href="#" title="吉林">吉林</a></li>
+                        <li><a href="#" title="黑龙江">黑龙江</a></li>
+                        <li><a href="#" title="上海">上海</a></li>
+                        <li><a href="#" title="江苏">江苏</a></li>
+                        <li><a href="#" title="浙江">浙江</a></li>
+                        <li><a href="#" title="安徽">安徽</a></li>
+                        <li><a href="#" title="福建">福建</a></li>
+                        <li><a href="#" title="江西">江西</a></li>
+                        <li><a href="#" title="山东">山东</a></li>
+                        <li><a href="#" title="河南">河南</a></li>
+                        <li><a href="#" title="湖北">湖北</a></li>
+                        <li><a href="#" title="湖南">湖南</a></li>
+                        <li><a href="#" title="广东">广东</a></li>
+                        <li><a href="#" title="广西">广西</a></li>
+                        <li><a href="#" title="海南">海南</a></li>
+                        <li><a href="#" title="重庆">重庆</a></li>
+                        <li><a href="#" title="四川">四川</a></li>
+                        <li><a href="#" title="贵州">贵州</a></li>
+                        <li><a href="#" title="云南">云南</a></li>
+                        <li><a href="#" title="西藏">西藏</a></li>
+                        <li><a href="#" title="陕西">陕西</a></li>
+                        <li><a href="#" title="甘肃">甘肃</a></li>
+                        <li><a href="#" title="青海">青海</a></li>
+                        <li><a href="#" title="宁夏">宁夏</a></li>
+                        <li><a href="#" title="新疆">新疆</a></li>
+                        <li><a href="#" title="台湾">台湾</a></li>
+                        <li><a href="#" title="香港">香港</a></li>
+                        <li><a href="#" title="澳门">澳门</a></li>
+                        <li><a href="#" title="海外">海外</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selectDiv clearfix">
+                <span class="left">分类</span>
+                <div class="right">
+                    <span><a href="#">不限</a></span>
+                    <ul class="select_area clearfix">
+                        <li><a href="#" title="耕地">耕地</a></li>
+                        <li><a href="#" title="林地">林地</a></li>
+                        <li><a href="#" title="园地">园地</a></li>
+                        <li><a href="#" title="草地">草地</a></li>
+                        <li><a href="#" title="商服用地">商服用地</a></li>
+                        <li><a href="#" title="工矿仓储用地">工矿仓储用地</a></li>
+                        <li><a href="#" title="住宅用地">住宅用地</a></li>
+                        <li><a href="#" title="公共管理与公共服务用地">公共管理与公共服务用地</a></li>
+                        <li><a href="#" title="特殊用地">特殊用地</a></li>
+                        <li><a href="#" title="交通运输用地">交通运输用地</a></li>
+                        <li><a href="#" title="水田">水田</a></li>
+                        <li><a href="#" title="水浇地">水浇地</a></li>
+                        <li><a href="#" title="旱地">旱地</a></li>
+                        <li><a href="#" title="其他土地">其他土地</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selectDiv clearfix">
+                <span class="left">方式</span>
+                <div class="right">
+                    <span><a href="#">不限</a></span>
+                    <ul class="select_area clearfix">
+                        <li><a href="#" title="转让">转让</a></li>
+                        <li><a href="#" title="出租">出租</a></li>
+                        <li><a href="#" title="转包">转包</a></li>
+                        <li><a href="#" title="入股">入股</a></li>
+                        <li><a href="#" title="互换">互换</a></li>
+                        <li><a href="#" title="招拍挂">招拍挂</a></li>
+                        <li><a href="#" title="抵押">抵押</a></li>
+                        <li><a href="#" title="合作开发">合作开发</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selectDiv clearfix menu_hidden">
+                <span class="left">面积</span>
+                <div class="right">
+                    <span><a href="#">不限</a></span>
+                    <ul class="select_area clearfix">
+                        <li><a href="#" title="10亩以下">10亩以下</a></li>
+                        <li><a href="#" title="10~100亩">10~100亩</a></li>
+                        <li><a href="#" title="100~1000亩">100~1000亩</a></li>
+                        <li><a href="#" title="1000~5000亩">1000~5000亩</a></li>
+                        <li><a href="#" title="5000亩以上">5000亩以上</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="selectDiv clearfix menu_hidden">
+                <span class="left">年限</span>
+                <div class="right">
+                    <span><a href="#">不限</a></span>
+                    <ul class="select_area clearfix">
+                        <li><a href="#" title="5年以下">5年以下</a></li>
+                        <li><a href="#" title="5~10年">5~10年</a></li>
+                        <li><a href="#" title="10~20年">10~20年</a></li>
+                        <li><a href="#" title="20~30年">20~30年</a></li>
+                        <li><a href="#" title="30~40年">30~40年</a></li>
+                        <li><a href="#" title="40年以上">40年以上</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span class="expand">更多选项 <i class="fa fa-angle-down" aria-hidden="true"></i></span>
+        </div>
+
+        <!--土地展示-->
+        <div class="land_show">
+            <ul class="sort clearfix">
+                <li>默认排序</li>
+                <li>发布时间</li>
+                <li>面积</li>
+                <li>可流转年限</li>
+                <li>浏览量</li>
+                <li>地块评级</li>
+                <div class="how_show">
+                    <i class="fa fa-list-ul" aria-hidden="true"></i>
+                    <i class="fa fa-th-large" aria-hidden="true"></i>
+                </div>
+            </ul>
+
+            <div class="lands">
+                <div class="land">
+                    <div class="main_img">
+                        <a href="#"><img src="static/img/search_page-content/1.jpg" alt="图片"></a>
+                    </div>
+                    <div class="main_contentBox">
+                        <div class="main_content_title">
+                            <a href="#">
+                                <span class="kind">自营</span>
+                                <a href="#"><span class="title">广州市花都区赤坭镇锦山89.01亩山地出租，30年超长年限</span></a>
+                            </a>
+                        </div>
+                        <div class="main_content">
+                            <div class="main_content_tt">
+                                <span class="main_ctn">
+                                    <a href="#">林地</a>-<a href="#">有林地</a>
+                                </span>
+                                <span>出租</span>
+                            </div>
+                            <div class="main_content_dz">
+                                <div class="dz_address">
+                                    <a href="#">广东</a>-<a href="#">广州</a>-<a href="#">花都</a>
+                                </div>
+                                <span class="dz_number">89.01亩</span>
+                                <span class="dz_year">30年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_rtt">
+                        <span class="money">1123</span>
+                        <span>元/亩/年</span>
+                    </div>
+                </div>
+                <div class="land">
+                    <div class="main_img">
+                        <a href="#"><img src="static/img/search_page-content/1.jpg" alt="图片"></a>
+                    </div>
+                    <div class="main_contentBox">
+                        <div class="main_content_title">
+                            <a href="#">
+                                <span class="kind">自营</span>
+                                <a href="#"><span class="title">广州市花都区赤坭镇锦山89.01亩山地出租，30年超长年限</span></a>
+                            </a>
+                        </div>
+                        <div class="main_content">
+                            <div class="main_content_tt">
+                                <span class="main_ctn">
+                                    <a href="#">林地</a>-<a href="#">有林地</a>
+                                </span>
+                                <span>出租</span>
+                            </div>
+                            <div class="main_content_dz">
+                                <div class="dz_address">
+                                    <a href="#">广东</a>-<a href="#">广州</a>-<a href="#">花都</a>
+                                </div>
+                                <span class="dz_number">89.01亩</span>
+                                <span class="dz_year">30年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_rtt">
+                        <span class="money">1123</span>
+                        <span>元/亩/年</span>
+                    </div>
+                </div>
+                <div class="land">
+                    <div class="main_img">
+                        <a href="#"><img src="static/img/search_page-content/1.jpg" alt="图片"></a>
+                    </div>
+                    <div class="main_contentBox">
+                        <div class="main_content_title">
+                            <a href="#">
+                                <span class="kind">自营</span>
+                                <a href="#"><span class="title">广州市花都区赤坭镇锦山89.01亩山地出租，30年超长年限</span></a>
+                            </a>
+                        </div>
+                        <div class="main_content">
+                            <div class="main_content_tt">
+                                <span class="main_ctn">
+                                    <a href="#">林地</a>-<a href="#">有林地</a>
+                                </span>
+                                <span>出租</span>
+                            </div>
+                            <div class="main_content_dz">
+                                <div class="dz_address">
+                                    <a href="#">广东</a>-<a href="#">广州</a>-<a href="#">花都</a>
+                                </div>
+                                <span class="dz_number">89.01亩</span>
+                                <span class="dz_year">30年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_rtt">
+                        <span class="money">1123</span>
+                        <span>元/亩/年</span>
+                    </div>
+                </div>
+                <div class="land">
+                    <div class="main_img">
+                        <a href="#"><img src="static/img/search_page-content/1.jpg" alt="图片"></a>
+                    </div>
+                    <div class="main_contentBox">
+                        <div class="main_content_title">
+                            <a href="#">
+                                <span class="kind">自营</span>
+                                <a href="#"><span class="title">广州市花都区赤坭镇锦山89.01亩山地出租，30年超长年限</span></a>
+                            </a>
+                        </div>
+                        <div class="main_content">
+                            <div class="main_content_tt">
+                                <span class="main_ctn">
+                                    <a href="#">林地</a>-<a href="#">有林地</a>
+                                </span>
+                                <span>出租</span>
+                            </div>
+                            <div class="main_content_dz">
+                                <div class="dz_address">
+                                    <a href="#">广东</a>-<a href="#">广州</a>-<a href="#">花都</a>
+                                </div>
+                                <span class="dz_number">89.01亩</span>
+                                <span class="dz_year">30年</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main_rtt">
+                        <span class="money">1123</span>
+                        <span>元/亩/年</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--页脚-->
+        <div id="footer">
+            <p>闲心e锄技术有限公司</p>
+        </div>
+
+        <!--引入js-->
+        <script type="text/javascript" src="js/tools.js"></script>
+        <script type="text/javascript" src="js/search_page.js"></script>
+    </body>
+</html>

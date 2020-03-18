@@ -1,0 +1,96 @@
+.service{
+    margin: 35px auto 0px;
+    width: 1500px;
+    padding: 20px 10px 20px 20px;
+}
+
+.service hr{
+    height: 3px;
+    background-color: gray;
+    width: 1430px;
+    margin-left: 20px;
+}
+
+.land_service{
+    width: 100%;
+    background-color: rgba(222, 222, 222, 0.48);
+    padding-bottom: 30px;
+}
+
+.land_service div{
+    margin: 0px auto;
+}
+
+.land_service div p{
+    width: 300px;
+    float: left;
+    margin-left: 350px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.land_service div img{
+    float: left;
+    margin-left: 10px;
+}
+
+/*种植服务*/
+.plant_service{
+    width: 100%;
+    background-color: rgba(222, 222, 222, 0.48);
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+
+.plant_service img{
+    float: left;
+    width: 400px;
+    height: 260px;
+    margin-left: 60px;
+}
+
+/*托管服务*/
+.trusteeship_service{
+    margin-top: 50px;
+    background-color: rgba(222, 222, 222, 0.48);
+    padding-bottom: 30px;
+}
+
+.trusteeship_service div img{
+    margin-left: 350px;
+}
+
+.trusteeship_service div p{
+    display: inline-block;
+    width: 200px;
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 80px;
+}
+
+/*销售服务*/
+.sale_service{
+    margin-top: 50px;
+    background-color: rgba(222, 222, 222, 0.48);
+    padding-bottom: 30px;
+}
+
+.sale_service div img{
+    width: 400px;
+    height: 260px;
+    margin-left: 200px;
+}
+
+/*旅游服务*/
+.travel_service{
+    margin-top: 50px;
+    background-color: rgba(222, 222, 222, 0.48);
+    padding-bottom: 30px;
+}
+.travel_service div img{
+    margin-left: 400px;
+    width: 600px;
+    height: 338px;
+}

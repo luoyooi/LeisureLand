@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <groupId>com.land</groupId>
+  <artifactId>LeisureLand</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+
+  <name>LeisureLand Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+    <spring.version>4.3.18.RELEASE</spring.version>
+  </properties>
+
+  <dependencies>
+    <!--测试框架Junit-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <!--指定范围，在测试时才会加载-->
+      <scope>test</scope>
+    </dependency>
+    <!--##########################数据库依赖start##############################-->
+    <!--添加mysql驱动依赖-->
+    <!--https://mvnrepository.com/artifact/mysql/mysql-connector-java-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.47</version>
+    </dependency>
+
+    <!--c3p0连接池-->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>0.9.1.2</version>
+    </dependency>
+
+    <!--添加mybatis依赖-->
+    <!--https://mvnrepository.com/artifact/org.mybatis/mybatis-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.4.1</version>
+    </dependency>
+
+    <!--添加mybatis/spring整合包依赖-->
+    <!--https://mvnrepository.com/artifact/org.mybatis/mybatis-spring-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.3.0</version>
+    </dependency>
+    <!--##########################数据库依赖end##############################-->
+
+    <!--##########################spring依赖start##############################-->
+    <!--springcore核心-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-core-->
+    <!--
+    包含Spring框架基本的核心工具类。
+    Spring其它组件要都要使用到这个包里的类，是其它组件的基本核心，当然你也可以在自己的应用系统中使用这些工具类。
+    外部依赖CommonsLogging，(Log4J)。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springbeanbean的管理-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-beans-->
+    <!--
+    所有应用都要用到的，它包含访问配置文件、创建和管理bean
+    以及进行InversionofControl/DependencyInjection（IoC/DI）操作相关的所有类。
+    如果应用只需基本的IoC/DI支持，引入spring-core.jar及spring-beans.jar文件就可以了。
+    外部依赖spring-core，(CGLIB)。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springAop-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-aop-->
+    <!--
+    这个jar文件包含在应用中使用Spring的AOP特性时所需的类和源码级元数据支持。
+    使用基于AOP的Spring特性，如声明型事务管理（DeclarativeTransactionManagement），也要在应用里包含这个jar包。
+    外部依赖spring-core，(spring-beans，AOPAlliance，CGLIB，CommonsAttributes)。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aop</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springcontext-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-context-->
+    <!--
+    这个jar文件为Spring核心提供了大量扩展。可以找到使用SpringApplicationContext特性时所需的全部类，
+    JDNI所需的全部类，UI方面的用来与模板（Templating）引擎如Velocity、FreeMarker、JasperReports集成的类，
+    以及校验Validation方面的相关类。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springweb-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-web-->
+    <!--
+    含Web应用开发时，用到Spring框架时所需的核心类，
+    包括自动载入WebApplicationContext特性的类、Struts与JSF集成类、文件上传的支持类、Filter类和大量工具辅助类。
+    外部依赖spring-context,ServletAPI,(JSPAPI,JSTL,CommonsFileUpload,COS)。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springmvc-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-webmvc-->
+    <!--
+    这个jar文件包含SpringMVC框架相关的所有类。
+    包含国际化、标签、Theme、视图展现的FreeMarker、JasperReports、Tiles、Velocity、XSLT相关类。
+    当然，如果你的应用使用了独立的MVC框架，则无需这个JAR文件里的任何类。
+    外部依赖spring-web,(spring-support，Tiles，iText，POI)。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springtx-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-tx-->
+    <!--
+    以前是在这里org.springframework.transaction
+    为JDBC、Hibernate、JDO、JPA、Beans等提供的一致的声明式和编程式事务管理支持。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springjdbc-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-jdbc-->
+    <!--
+    这个jar文件包含对Spring对JDBC数据访问进行封装的所有类。
+    外部依赖spring-beans，spring-dao。
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springEl表达式-->
+    <!--https://mvnrepository.com/artifact/org.springframework/spring-expression-->
+    <!--
+    SpringExpressionLanguage——即Spring3中功能丰富强大的表达式语言，简称SpEL。
+    SpEL是类似于OGNL和JSFEL的表达式语言，能够在运行时构建复杂表达式，存取对象属性、对象方法调用等。
+    所有的SpEL都支持XML和Annotation两种方式，格式：#{SpELexpression}
+    -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-expression</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springorm-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!--springaspects-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-aspects</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>net.sourceforge.cglib</groupId>
+      <artifactId>com.springsource.net.sf.cglib</artifactId>
+      <version>2.2.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aopalliance</groupId>
+      <artifactId>com.springsource.org.aopalliance</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>com.springsource.org.aspectj.weaver</artifactId>
+      <version>1.7.2.RELEASE</version>
+    </dependency>
+    <!--##########################spring依赖end##############################-->
+
+    <!--##########################日志相关jar包start############################-->
+    <!--添加日志相关jar包-->
+    <!--https://mvnrepository.com/artifact/log4j/log4j-->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>1.2.17</version>
+    </dependency>
+    <!--##########################日志相关jar包end############################-->
+
+    <!--##########################commons相关jar包start########################-->
+
+    <!--Io提供依赖-->
+    <!--https://mvnrepository.com/artifact/commons-io/commons-io-->
+    <!--
+    处理IO的工具类包，对java.io进行扩展，提供了更加方便的IO操作。
+    -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.5</version>
+    </dependency>
+
+    <!--https://mvnrepository.com/artifact/commons-logging/commons-logging-->
+    <!--
+    提供统一的日志接口，同时兼顾轻量级和不依赖于具体的实现。
+    类包给中间件/日志工具开发者一个简单的日志操作抽象，允许程序开发人员使用不同的具体日志实现工具。
+    为spring提供依赖支持
+    -->
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <!--##########################Commons相关jar包end########################-->
+
+    <!--##########################Json相关jar包start########################-->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.9.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.9.9</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.9.9</version>
+    </dependency>
+    <!--##########################Json相关jar包end########################-->
+
+    <!--##########################JSTL相关jar包start########################-->
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-impl</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.taglibs</groupId>
+      <artifactId>taglibs-standard-spec</artifactId>
+      <version>1.2.5</version>
+    </dependency>
+    <!--##########################JSTL相关jar包end########################-->
+
+  </dependencies>
+
+  <build>
+    <finalName>LeisureLand</finalName>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>

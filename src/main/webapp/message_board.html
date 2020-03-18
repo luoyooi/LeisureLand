@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>留言板</title>
+        <link rel="stylesheet" href="css/remove_default.css" type="text/css"/>
+        <link rel="stylesheet" href="css/global.css" type="text/css"/>
+        <link rel="stylesheet" href="css/header.css" type="text/css"/>
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" type="text/css"/>
+        <link rel="stylesheet" href="css/message_board.css" type="text/css"/>
+        <link rel="stylesheet" href="css/footer.css" type="text/css"/>
+    </head>
+    <body>
+        <!--导航栏-->
+        <div class="header">
+            <div class="header-logo">
+                <a href="index.html"><img src="static/img/header/logo.png" alt="logo"/></a>
+                <p class="headerTitle">最好的服务，值得你的信赖！</p>
+            </div>
+            <div class="header_login">
+                <a href="login.html">登录</a>
+                <a href="sigin.html">注册</a>
+            </div>
+            <ul class="head-menu">
+                <li><a href="#">我要找地</a></li>
+                <li><a href="#">土地招商</a></li>
+                <li><a href="#">分站合作</a></li>
+                <li id="web_nav_li">
+                    <a href="#">网站导航 <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class=" hidden">
+                        <li><img src="static/img/content-header/QR_code.png" alt="二维码"></li>
+                        <li><a href="message_board.html">留言板</a></li>
+                        <li><a href="dialogue.html">人工客服</a></li>
+                    </ul>
+                </li>
+                <li><a href="search_page.html"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <!--留言板-->
+        <div class="message_box">
+            <div class="preface">
+                <h2>留言板</h2>
+                <span>您想说些什么吗？就在这里发表留言吧~ 欢迎留下任何宝贵建议和意见！我们会尽量及时回复。</span>
+                <audio controls="controls" autoplay="autoplay" loop="loop">
+                    <source src="static/music/Keega-Water.mp3" type="audio/mpeg">
+                    你的浏览器不支持多媒体标签！
+                </audio>
+                <div class="presay">
+                    <p>内心的失望，是河岸背阴处的苔藓，</p>
+                    <p>无声地一天天滋长着。</p>
+                    <p>而希望，则是在河水的波纹上荡漾的阳光，</p>
+                    <p>时不时地闪亮一下，</p>
+                    <p>当你伸手去抓，光芒瞬间破碎，</p>
+                    <p>只有水珠，滴滴答答全部落到了地上。</p>
+                </div>
+            </div>
+            <div class="submit_comment">
+                <hr/>
+                <form action="#" method="post" class="clearfix">
+                    <div class="head_info">
+                        <img src="static/img/message_box/小豆.jpg" alt="头像">
+                        <span>发表我的留言</span>
+                    </div>
+                    <textarea class="main_comment" name="comment" placeholder="If you have any comment, just post it here..."></textarea>
+                    <button type="submit" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> 提交留言</button>
+                </form>
+            </div>
+
+            <div class="comments">
+                <h3 class="comment_num"><span>1024条评论</span></h3>
+                <div class="comment clearfix">
+                    <img class="head" src="static/img/message_box/小豆.jpg" alt="头像">
+                    <div class="name_time_comment">
+                        <h4><a href="#">小智-zz</a></h4>
+                        <p class="content">期待你们推出更多的服务！</p>
+                        <p class="time"><span>1小时前</span><a href="#">回复</a></p>
+                    </div>
+                </div>
+                <div class="comment clearfix">
+                    <img class="head" src="static/img/message_box/宋阳2005.jpg" alt="头像">
+                    <div class="name_time_comment">
+                        <h4><a href="#">宋阳2005</a></h4>
+                        <p class="content">期待我所在的城市也能尽快上线！加油，奥利给！</p>
+                        <p class="time"><span>2小时前</span><a href="#">回复</a></p>
+                    </div>
+                </div>
+                <div class="comment clearfix">
+                    <img class="head" src="static/img/message_box/欢欢喜喜.jpeg" alt="头像">
+                    <div class="name_time_comment">
+                        <h4><a href="#">欢欢喜喜</a></h4>
+                        <p class="content">家在城市，小时候玩过农场类的游戏，如今你们帮我实现了去真正的地里体验生活这个梦想，十分感谢！希望你们越来越好哦。</p>
+                        <p class="time"><span>1小时前</span><a href="#">回复</a></p>
+                    </div>
+                </div>
+                <div class="comment clearfix">
+                    <img class="head" src="static/img/message_box/爱挑刺的刺儿头.jpg" alt="头像">
+                    <div class="name_time_comment">
+                        <h4><a href="#">爱挑刺的刺儿头</a></h4>
+                        <p class="content">周围的土地由于各种原因污染严重，种地根本不行，只能改为其他用途。本想着春天好好种点菜，秋天可以体验收获的喜悦。
+                        然鹅现在都破灭了。平台的信息更新还有待提高啊，希望以后不要发生这样的事情了，这次就选择原谅你们。</p>
+                        <p class="time"><span>1小时前</span><a href="#">回复</a></p>
+                    </div>
+                </div>
+                <div class="comment clearfix">
+                    <img class="head" src="static/img/message_box/农场小姐妹.jpg" alt="头像">
+                    <div class="name_time_comment">
+                        <h4><a href="#">农场小姐妹</a></h4>
+                        <p class="content">可以改善一下土地周围的网络设施吗，每次去网络都不好，都不能开直播了，很烦。</p>
+                        <p class="time"><span>1小时前</span><a href="#">回复</a></p>
+                    </div>
+                </div>
+                <ul class="next_comment clearfix">
+                    <li id="first_next"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><a href="#">60</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--页脚-->
+        <div id="footer">
+            <p>闲心e锄技术有限公司</p>
+        </div>
+    </body>
+
+    <!--引入工具-->
+    <script type="text/javascript" src="js/tools.js"></script>
+    <!--首页js代码-->
+    <script type="text/javascript" src="js/web_nav.js"></script>
+    <!--设置audio控件音量-->
+    <script type="text/javascript" src="js/message_board.js"></script>
+</html>
