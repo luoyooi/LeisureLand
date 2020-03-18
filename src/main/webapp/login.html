@@ -7,26 +7,49 @@
         <link type="text/css" rel="stylesheet" href="css/remove_default.css">
     </head>
     <body>
-        <form class="login-form">
-            <h1>Login</h1>
-            <div class="txtb">
-                <input type="text" name="username" autocomplete="off">
-                <span data-placeholder="Username"></span>
+        <div class="box_container clearfix">
+            <form class="login-form">
+                <h1>Login</h1>
+                <div class="txtb">
+                    <input type="text" name="username" autocomplete="off">
+                    <span data-placeholder="Username"></span>
+                </div>
+                <div class="txtb">
+                    <input type="password" name="password" autocomplete="off">
+                    <span data-placeholder="Password"></span>
+                </div>
+                <input type="button" value="登陆" class="login-btn">
+            </form>
+
+            <!--海报-->
+            <div class="poster">
+                <span class="sigup">Do you have an account yet? Click <span>Register</span></span>
+                <span class="sigin hidden">Registration completed? return to <span>Login</span></span>
             </div>
 
-            <div class="txtb">
-                <input type="password" name="password" autocomplete="off">
-                <span data-placeholder="Password"></span>
-            </div>
-
-            <input type="button" value="登陆" class="login-btn">
-
-            <p id="tip"></p>
-            <div class="bottom-txt">
-                Don't have account?<a href="sigin.html"> Sign up</a>
-            </div>
-        </form>
+            <form class="login-form register">
+                <h1>Registered</h1>
+                <div class="txtb">
+                    <input type="email" name="email" autocomplete="off">
+                    <span data-placeholder="email address"></span>
+                </div>
+                <div class="txtb">
+                    <input type="text" name="username" autocomplete="off">
+                    <span data-placeholder="Username"></span>
+                </div>
+                <div class="txtb">
+                    <input type="password" name="password" autocomplete="off">
+                    <span data-placeholder="Password"></span>
+                </div>
+                <div class="txtb">
+                    <input type="password" name="cfm-password" autocomplete="off">
+                    <span data-placeholder="confirm Password"></span>
+                </div>
+                <input type="button" value="注册" class="login-btn">
+            </form>
+        </div>
     </body>
     <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/tools.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
 </html>
