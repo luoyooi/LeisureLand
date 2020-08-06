@@ -20,5 +20,5 @@
 ### 人工客服
 ![人工客服](https://images.gitee.com/uploads/images/2020/0806/172555_80b550ef_5451518.png "屏幕截图.png")
 
-#### 软件架构
-软件架构说明
+## 技术栈
+javascript、HTML5、CSS3、jQuery、font-awesome-4.7.0
