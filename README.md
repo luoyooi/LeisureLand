@@ -5,8 +5,11 @@
 
 ### 登录页
 本页集成登录和注册功能为一体，两者之前切换如同翻书一样，极大的满足了用户体验。
-![登录模块](https://images.gitee.com/uploads/images/2020/0806/171350_166bd657_5451518.png "屏幕截图.png")
-![注册模块](https://images.gitee.com/uploads/images/2020/0806/171433_bd0ba7e3_5451518.png "屏幕截图.png")
+![登录模块](https://images.gitee.com/uploads/images/2020/0806/171543_7b7f63dc_5451518.png "屏幕截图.png")
+![注册模块](https://images.gitee.com/uploads/images/2020/0806/171640_6d51f5a8_5451518.png "屏幕截图.png")
+
+### 主页
+
 
 #### 软件架构
 软件架构说明
